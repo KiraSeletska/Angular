@@ -1,0 +1,8 @@
+<input [(ngModel)]="newTodo"/>
+<button (click) ="addTodo()">Add todo</button>
+
+<div *ngFor="let todo of todos"[class.done]="todo.completed">
+  {{todo.title}}
+  <button (click)="markDone(todo)">Done</button>
+  <button (click)="removeTodo(todo)">X</button>
+</div>
