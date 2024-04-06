@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+
+  color: rgb(220, 220, 220);
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  textarea,
+  button,
+  select {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    appearance: none; /* Отключение стилей по умолчанию */
+  }
+}
+
+button{
+  cursor: pointer;
+}
+html {
+  background-image: url("../src/assets/background/1.jpg");
+  background-size: cover; /* Растягиваем изображение на всю доступную область */
+  background-position: center; /* Центрируем изображение */
+  background-repeat: no-repeat; /* Запрет повторения изображения */
+  min-height: 100%; /* Минимальная высота равная высоте экрана */
+}
+body {
+  background-color: transparent;
+}
+
+
