@@ -1,8 +1,12 @@
-<input [(ngModel)]="newTodo"/>
-<button (click) ="addTodo()">Add todo</button>
+<h1>{{ title }}</h1>
 
-<div *ngFor="let todo of todos"[class.done]="todo.completed">
-  {{todo.title}}
-  <button (click)="markDone(todo)">Done</button>
-  <button (click)="removeTodo(todo)">X</button>
+<!-- Форма для добавления новой задачи -->
+<input [(ngModel)]="newTodo" placeholder="Enter new todo">
+<button (click)="addTodo()">Add Todo</button>
+
+<!-- Список задач -->
+<div *ngFor="let todo of todos" [class.done]="todo.completed"> <!-- Используем todo.completed для добавления класса "done" -->
+  <input type="checkbox" [checked]="todo.completed" (change)="toggleTodoCompleted(todo)"> <!-- Используем todo.completed и обработчик (change) -->
+  <span>{{ todo.title }}</span>
+  <button (click)="removeTodo(todo)">Delete</button>
 </div>
