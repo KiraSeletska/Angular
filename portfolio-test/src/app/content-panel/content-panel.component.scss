@@ -1,3 +1,13 @@
-.wrouter-wrapper{
-    padding: 20px;
+.wrouter-wrapper {
+  padding: 20px;
+  overflow-y: auto;
+  height: 90vh;
+}
+.wrouter-wrapper ::-webkit-scrollbar {
+  display: none; 
+}
+
+.wrouter-wrapper {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
 }
