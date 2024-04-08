@@ -1,1 +1,15 @@
-<p>previous-experiance works!</p>
+
+<ng-container *ngFor="let experience of prevExperiance">
+  <div class="experience">
+    <h2>{{ experience.positions.join(' / ') }}</h2>
+    <p><strong>Period:</strong> {{ experience.period }}</p>
+    <p><strong>Directings:</strong> {{ experience.directings }}</p>
+    <p><strong>Direction:</strong> {{ experience.direction }}</p>
+    <p><strong>Location:</strong> {{ experience.location }}</p>
+    <p><strong>Main Tasks:</strong> {{ experience.mainTasks }}</p>
+    <p><strong>Responsibilities:</strong> {{ experience.responsibilities }}</p>
+    <p><strong>Other Responsibilities:</strong> {{ experience.otherResponsibilities }}</p>
+  </div>
+</ng-container>
+
+  

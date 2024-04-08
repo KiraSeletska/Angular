@@ -19,6 +19,8 @@ interface FrontendExperience {
   skillsUsedWebsite: string[];
 
 }
+
+
 export interface SkillsIcons {
   [key: string]: string;
 }
