@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LeftBarComponent } from './left-bar/left-bar.component';
-import { ContentPanelComponent } from './content-panel/content-panel.component';
+import { LeftBarComponent } from './components/left-bar/left-bar.component'; 
+import { ContentPanelComponent } from './components/content-panel/content-panel.component'; 
 
 @Component({
   selector: 'app-root',

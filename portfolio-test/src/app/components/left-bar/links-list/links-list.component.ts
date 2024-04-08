@@ -1,6 +1,6 @@
-import { Component, ElementRef } from '@angular/core';
-import { ProjectsComponent } from '../../projects/projects.component';
-import { SkillsComponent } from '../../skills/skills.component';
+import { Component } from '@angular/core';
+import { ProjectsComponent } from '../../../pages/projects/projects.component'; 
+import { SkillsComponent } from '../../../pages/skills/skills.component'; 
 import { RouterModule} from '@angular/router';
 
 @Component({

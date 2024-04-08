@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { ProjectsComponent } from './projects/projects.component';
-import { SkillsComponent } from './skills/skills.component';
-import { ContactsComponent } from './contacts/contacts.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './pages/projects/projects.component'; 
+import { SkillsComponent } from './pages/skills/skills.component'; 
+import { ContactsComponent } from './pages/contacts/contacts.component'; 
+import { ExperienceComponent } from './pages/experience/experience.component'; 
 
 export const routes: Routes = [ 
     
