@@ -2,6 +2,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 30px;
   }
   
   ul a {
@@ -10,9 +11,8 @@ ul {
     will-change: font-size;
     transition-timing-function: ease-in-out;
     backface-visibility: hidden;
-    transform: scale(1); /* Исходный масштаб */
-    transition: transform 0.5s ease; /* Применение перехода */
-    width: 120px;
+    transform: scale(1); 
+    transition: transform 0.5s ease; 
     display: block;
     text-align: center;
   }
@@ -28,10 +28,6 @@ ul {
     transition: background-color 0.5s ease; 
   }
   
-  ul a.active {
-   // color:rgb(243, 72, 72); 
-    transform: scale(1.25);
-  }
   
   ul a.active::after {
     background-color: rgb(33,33,33); 

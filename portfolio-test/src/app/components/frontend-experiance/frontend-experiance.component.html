@@ -1,0 +1,63 @@
+<section class="itexperience-container">
+    <h2>{{frontendExperiance.positions}}</h2>
+    <p>{{frontendExperiance.period}}</p>
+    <p>{{frontendExperiance.mainTask}}</p>
+    <div class="game">
+        <div>
+            <h3>On-line Game</h3>
+            <p>{{ frontendExperiance.descrGame }}</p>
+            <h4>Main Task:</h4>
+            <p>{{ frontendExperiance.mainTaskGame }}</p>
+            <h4>Responsibilities:</h4>
+            <p>{{ frontendExperiance.responsibilitiesGame }}</p>
+            <h4>Skills used</h4>
+            <div class="skills">
+                <ng-container *ngFor="let skill of frontendExperiance.skillsUsedGame">
+                    <ng-container *ngIf="icons[skill]">
+                        <img class="icon" [src]="icons[skill]" [alt]="skill">
+                    </ng-container>
+                </ng-container>
+            </div>
+            <h5>Other Skills</h5>
+            <div class="skills">
+                <ng-container *ngFor="let skill of frontendExperiance.skillsUsedGame">
+                    <ng-container *ngIf="!icons[skill]">
+                        <p>{{skill}}</p>
+                    </ng-container>
+                </ng-container>
+            </div>
+    
+        </div>
+   <div class="video"></div>
+    </div>
+    <div class="website">
+        <div>
+            <h3>Website for UI/UX Designer</h3>
+            <p>{{ frontendExperiance.descrWebsite }}</p>
+            <h4>Main Task:</h4>
+            <p>{{ frontendExperiance.mainTaskWebsite }}</p>
+            <h4>Responsibilities:</h4>
+            <p>{{ frontendExperiance.responsibilitiesWebsite }}</p>
+            <h4>Skills used</h4>
+            <div class="skills">
+                <ng-container *ngFor="let skill of frontendExperiance.skillsUsedWebsite">
+                    <ng-container *ngIf="icons[skill]">
+                        <img class="icon" [src]="icons[skill]" [alt]="skill">
+                    </ng-container>
+                </ng-container>
+            </div>
+            <h5>Other Skills</h5>
+            <div class="skills">
+                <ng-container *ngFor="let skill of frontendExperiance.skillsUsedWebsite">
+                    <ng-container *ngIf="!icons[skill]">
+                        <p>{{skill}}</p>
+                    </ng-container>
+                </ng-container>
+            </div>
+        </div>
+      
+
+
+        <div class="video"></div>
+    </div>
+</section>

@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ExperiancesService } from '../../data-serices/experiances.service';
 import { CommonModule } from '@angular/common';
 import { ProjectService } from '../../data-serices/projects.service';
-import { FrontendExperianceComponent } from '../../components/frontend-experiance/frontend-experiance.component';
-import { PreviousExperianceComponent } from '../../components/previous-experiance/previous-experiance.component';
 
 interface FrontendExperience {
   positions: string;
@@ -26,12 +24,22 @@ export interface SkillsIcons {
 }
 
 @Component({
-  selector: 'app-experience',
+  selector: 'app-frontend-experiance',
   standalone: true,
-  imports: [CommonModule, FrontendExperianceComponent, PreviousExperianceComponent],
-  templateUrl: './experience.component.html',
-  styleUrl: './experience.component.scss',
+  imports: [CommonModule],
+  templateUrl: './frontend-experiance.component.html',
+  styleUrl: './frontend-experiance.component.scss',
 })
-export class ExperienceComponent {
+export class FrontendExperianceComponent implements OnInit {
+  frontendExperiance!: FrontendExperience;
+  icons!: SkillsIcons;
 
+  constructor(
+    private itExperiance: ExperiancesService,
+    private projectService: ProjectService
+  ) {}
+  ngOnInit(): void {
+    this.frontendExperiance = this.itExperiance.getFrontendExperiance();
+    this.icons = this.projectService.getSkillsIcons();
+  }
 }
