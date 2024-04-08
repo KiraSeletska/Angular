@@ -1,0 +1,39 @@
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul a {
+    position: relative;
+    font-size: 20px;
+    will-change: font-size;
+    transition-timing-function: ease-in-out;
+    backface-visibility: hidden;
+    transform: scale(1); /* Исходный масштаб */
+    transition: transform 0.5s ease; /* Применение перехода */
+    width: 120px;
+    display: block;
+    text-align: center;
+  }
+  
+  ul a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: transparent; 
+    transition: background-color 0.5s ease; 
+  }
+  
+  ul a.active {
+   // color:rgb(243, 72, 72); 
+    transform: scale(1.25);
+  }
+  
+  ul a.active::after {
+    background-color: rgb(33,33,33); 
+  }
+  

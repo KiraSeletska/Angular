@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LinksListComponent } from './links-list.component';
+import { HelloComponent } from './hello-section.component';
 
-describe('LinksListComponent', () => {
-  let component: LinksListComponent;
-  let fixture: ComponentFixture<LinksListComponent>;
+describe('PersonalInfoComponent', () => {
+  let component: HelloComponent;
+  let fixture: ComponentFixture<HelloComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LinksListComponent]
+      imports: [HelloComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(LinksListComponent);
+    fixture = TestBed.createComponent(HelloComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

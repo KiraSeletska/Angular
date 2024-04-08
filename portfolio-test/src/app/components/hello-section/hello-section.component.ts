@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from '../../../data-serices/home.service';
+import { HomeService } from '../../data-serices/home.service'; 
 
 
 @Component({
-  selector: 'app-personal-info',
+  selector: 'app-hello-section',
   standalone: true,
   imports: [],
-  templateUrl: './personal-info.component.html',
-  styleUrl: './personal-info.component.scss'
+  templateUrl: './hello-section.component.html',
+  styleUrl: './hello-section.component.scss'
 })
-export class PersonalInfoComponent implements OnInit {
+export class HelloComponent implements OnInit {
   personalPhoto!: string;
   personalHello!: string;
 

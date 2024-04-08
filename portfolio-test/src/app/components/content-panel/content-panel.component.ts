@@ -4,11 +4,12 @@ import { ProjectsComponent } from '../../pages/projects/projects.component';
 import { ExperienceComponent } from '../../pages/experience/experience.component'; 
 import { SkillsComponent } from '../../pages/skills/skills.component'; 
 import { ContactsComponent } from '../../pages/contacts/contacts.component'; 
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-content-panel',
   standalone: true,
-  imports: [RouterModule, ProjectsComponent, ExperienceComponent, SkillsComponent, ContactsComponent],
+  imports: [RouterModule, ProjectsComponent, ExperienceComponent, SkillsComponent, ContactsComponent,HeaderComponent],
   templateUrl: './content-panel.component.html',
   styleUrl: './content-panel.component.scss'
 })
