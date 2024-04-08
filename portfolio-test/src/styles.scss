@@ -4,9 +4,11 @@
 }
 
 body {
-  height: 100% !important;
+  height: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  color: rgb(45, 45, 45);
+  background-color: rgb(238, 238, 238);
 }
 
 ul,
@@ -20,16 +22,29 @@ a {
   text-decoration: none; /* Убирает подчеркивание ссылок */
   cursor: pointer; /* Устанавливает курсор в виде указателя при наведении */
 }
-
+/*
 h1 {
-  font-size: 30px;
+  font-size: 66px;
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
+  width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+  border: 2px solid red;
 
   // -webkit-text-stroke: 1.5px black;
   // color: transparent;
   // color: rgb(69, 69, 69);
+}*/
+
+h1{
+  margin: 0;
+  padding: 0;
 }
+
+
 h2 {
   font-size: 20px;
 }

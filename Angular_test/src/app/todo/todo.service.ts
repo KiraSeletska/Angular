@@ -43,6 +43,7 @@ export class TodoService {
     if (typeof window !== 'undefined') {
       const storedTodos = window.localStorage.getItem('todos');
       this.todos = storedTodos ? JSON.parse(storedTodos) : [];
+
     }
   }
 }
