@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+height: 100vh;
+  }
+  ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: inherit; /* Наследует цвет текста от родительского элемента */
+  text-decoration: none; /* Убирает подчеркивание ссылок */
+  cursor: pointer; /* Устанавливает курсор в виде указателя при наведении */
+}
