@@ -1,0 +1,19 @@
+.container {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  position: relative;
+ // margin: 0 auto; /* Центрирование по горизонтали */
+  // margin-top: 100px; /* Отступ сверху */
+}
+
+#cube,
+.face {
+  height: 100%;
+  width: 100%;
+  position: absolute; /* Положение абсолютное относительно контейнера */
+  transform-style: preserve-3d;
+}
+.face {
+  border: 1px solid black; /* Черный бордер */
+}
